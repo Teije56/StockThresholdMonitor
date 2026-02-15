@@ -8,8 +8,9 @@ from datetime import datetime, timedelta
 import requests
 import ctypes
 import time
-
 import os
+
+#Stores Api key on local device instead of hardcoding the key. Can also hard code it
 API_KEY = os.getenv("ALPHA_VANTAGE_KEY")
 MIN_BETWEEN_CHECKS = 60  # Time in minutes between stock updates
 START_TIME = datetime.now()
